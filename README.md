@@ -1,8 +1,9 @@
 # EXPERIMENT--01-ALP-FOR-8086
+```
 Name : K.M.SWETHA
 Roll no : 212221240055
 Date of experiment : 09/09/2022
-
+```
 ## Aim: 
 To Write and execute ALP on fundamental arithmetic and logical operations.
 
@@ -73,7 +74,7 @@ HLT;
 ![image](https://user-images.githubusercontent.com/94228215/189380755-c5bccb87-8a05-4447-9a09-56b6d333cfd8.png)
 
 
-## Division alp 
+## Division of 8 bit ALP: 
 ```
 name "DIVISION"
 org 700h
