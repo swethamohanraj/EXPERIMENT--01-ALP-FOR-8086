@@ -21,7 +21,6 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 5.	Run (once there is no syntax error) 
 6.	Click OK to see/view the output of your program on the Emulator screen. 
 7.	After running the program, another menu screen will be displayed, where you have the option to “View” symbol table.
-![image](https://user-images.githubusercontent.com/94228215/189379631-846f1c02-20f7-4466-9d22-c767fd9ccad2.png)
 8.	 
 ![image](https://user-images.githubusercontent.com/36288975/189273263-d65baae9-4b8f-4723-afb3-c0ffa4052b04.png)
 9.	Click on emulate to start emulation 
@@ -30,7 +29,7 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ![image](https://user-images.githubusercontent.com/36288975/189273277-113a2a33-4a40-4ff8-95a5-ecd3a1f504fe.png)
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
+### Addition  of 8 bit ALP 
 ```
 name "ADDITION"
 org 100h
@@ -43,21 +42,54 @@ HLT;
 ```
 
 ## Output  
+![image](https://user-images.githubusercontent.com/94228215/189380416-251ce373-cdaf-46d5-acd6-06d201e4d44d.png)
  
-## Subtraction   of 8 bit numbers  ALP 
- 
+### Subtraction   of 8 bit numbers  ALP 
+```
+name "SUBTRACTION"
+org 100h
+MOV AH,09H;
+MOV BH,03H;
+SUB AH,BH;
+MOV CH,AH;
+MOV AH,00H;
+HLT;
+```
+## Output
+![image](https://user-images.githubusercontent.com/94228215/189380569-7768572c-607a-4b83-a1e5-dceedfabb953.png)
+
+### Multiplication of 8 bit ALP:
+```
+name "MULTIPLICATION"
+org 700h
+MOV AL,15H;
+MOV BL,03H;
+MUL BL;
+MOV CL,AL;
+MOV AL,00H;
+HLT;
+```
 ## Output  
-## Multiplication alp 
- ## Output  
+![image](https://user-images.githubusercontent.com/94228215/189380755-c5bccb87-8a05-4447-9a09-56b6d333cfd8.png)
 
 
 ## Division alp 
-
+```
+name "DIVISION"
+org 700h
+MOV AL,40H;
+MOV BL,02H;
+DIV BL;
+MOV CL,AL;
+MOV AL,00H;
+HLT;
+```
 ## Output  
+![image](https://user-images.githubusercontent.com/94228215/189380861-c3bda9bc-6f35-4cd9-869b-6a814ba804ca.png)
 
 
 ## Result :
- 
+ Thus, a program is executed on ALP for the fundamental arithmetic and logical operations.
 
 
 
